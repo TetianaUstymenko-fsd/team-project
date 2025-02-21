@@ -1,3 +1,46 @@
 .your-order {
-  color: coral;
+  padding: 80px 20px;
+  background-color:  #576f35;;
+}
+.your-order-title{
+  font-size: 48px;
+  line-height: 1.1;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+margin-bottom: 20px;
+
+}
+.your-order-title-dustypink{
+  color: #d4bfc4;
+}
+.your-order-text{
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.42857;
+color: #fbfbfb;
+margin-bottom: 40px;
+}
+
+.your-order-form{
+  border-radius: 30px;
+padding: 40px 20px;
+width: 335px;
+height: 552px;
+margin: 0 auto;
+  background-color: #fbfbfb;
+}
+
+.your-order-form-text{
+  font-size: 28px;
+line-height: 1;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #141414;
+}
+.your-order-form-text-wine{
+  color: #7a3145;
+}
+.your-order-form-text-olivegreen{
+  color: #576f35;;
 }
