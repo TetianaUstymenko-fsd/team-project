@@ -1,44 +1,90 @@
 .your-order {
   padding: 80px 20px;
-  background-color:  #576f35;;
+  margin: 0 auto;
+  background-color: #576f35;
 }
-.your-order-title{
+
+.your-order_text {
+  padding-left: auto;
+}
+.your-order-title {
   font-size: 48px;
   line-height: 1.1;
-
-margin-bottom: 20px;
-
+  margin-bottom: 20px;
+  width: 335px;
 }
-.your-order-title-dustypink{
+.your-order-title-dustypink {
   color: #d4bfc4;
 }
-.your-order-text{
+.your-order-text {
   font-weight: 500;
-font-size: 14px;
-line-height: 1.42857;
-color: #fbfbfb;
-margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+  width: 335px;
 }
 
-.your-order-form{
+.your-order-form {
   border-radius: 30px;
-padding: 40px 20px;
-width: 335px;
-height: 552px;
-margin: 0 auto;
+  padding: 40px 20px;
+  width: 335px;
+  height: 552px;
+  margin: 0 auto;
   background-color: #fbfbfb;
 }
 
-.your-order-form-text{
+.your-order-form-text {
   font-size: 28px;
-line-height: 1;
-letter-spacing: -0.01em;
-text-transform: uppercase;
-color: #141414;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 40px;
 }
-.your-order-form-text-wine{
+.your-order-form-text-wine {
   color: #7a3145;
 }
-.your-order-form-text-olivegreen{
-  color: #576f35;;
+.your-order-form-text-olivegreen {
+  color: #576f35;
+}
+.form-input {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #141414;
+
+  border: 1px solid #858585;
+  border-radius: 30px;
+  padding: 14px 220px 14px 16px;
+  width: 295px;
+  height: 48px;
+  padding-right: 0;
+  margin-bottom: 16px;
+}
+.comment {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #141414;
+
+  border: 1px solid #858585;
+  border-radius: 15px;
+  padding: 14px 219px 59px 16px;
+  width: 295px;
+  height: 92px;
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+.form-btn {
+  font-size: 18px;
+  line-height: 1.1;
+  color: #fbfbfb;
+
+  border-radius: 30px;
+  border: none;
+  padding: 16px 129px;
+  width: 295px;
+  height: 52px;
+  background-color: #7a3145;
 }
