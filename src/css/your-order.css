@@ -1,6 +1,7 @@
 .your-order {
   padding: 80px 20px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #576f35;
 }
 
@@ -31,6 +32,7 @@
   width: 335px;
   height: 552px;
   margin: 0 auto;
+  margin-bottom: 20px;
   background-color: #fbfbfb;
 }
 
@@ -49,11 +51,6 @@
   color: #576f35;
 }
 .form-input {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #141414;
-
   border: 1px solid #858585;
   border-radius: 30px;
   padding: 14px 220px 14px 16px;
@@ -62,20 +59,31 @@
   padding-right: 0;
   margin-bottom: 16px;
 }
-.comment {
+.form-input::placeholder {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #141414;
-
+}
+.comment {
   border: 1px solid #858585;
   border-radius: 15px;
   padding: 14px 219px 59px 16px;
   width: 295px;
   height: 92px;
+  box-sizing: border-box;
+  overflow: hidden;
+  resize: none;
   padding-right: 0;
   margin-bottom: 20px;
 }
+.comment::placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #141414;
+}
+
 .form-btn {
   font-size: 18px;
   line-height: 1.1;
@@ -87,4 +95,50 @@
   width: 295px;
   height: 52px;
   background-color: #7a3145;
+}
+
+.your-order-socials {
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 335px;
+  height: 456px;
+  background-color: #7a3145;
+  margin: 0 auto;
+}
+img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(20, 20, 20, 0.2);
+}
+.your-order-socials-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+  margin-bottom: 16px;
+}
+.your-order-socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.your-order-socials-item:not(:last-child)::after {
+  content: ' / ';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-left: 8px;
+}
+
+.your-order-socials-link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
 }
