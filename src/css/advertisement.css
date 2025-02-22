@@ -5,6 +5,10 @@
     /* padding: 0 16px; */
 }
 
+.adver{
+    display: none;
+}
+
 
 .advertisement {
     padding: 80px 20px;
