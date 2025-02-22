@@ -1,3 +1,52 @@
+/* HERO-MOB */
+
 .hero {
-  color: aquamarine;
+  background-color: #576f35;
+  /* background-image: url(../img/hero/hero-bg-mob-min.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column; */
+}
+
+.container-text {
+  padding: 48px 20px 40px;
+  text-align: start;
+}
+
+.hero-title {
+  font-size: 52px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 14px;
+  line-height: 1.42;
+}
+
+/* HERO-TAB */
+
+@media screen and (min-width: 768px) {
+  .container-text {
+    padding: 48px 32px 52px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+    max-width: 704px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 603px;
+  }
+
+  .container-image {
+    padding: 0;
+    margin: 0;
+  }
 }
