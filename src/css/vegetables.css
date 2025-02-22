@@ -1,10 +1,13 @@
+.container {
+    padding: 80px 20px;
+}
+
 .section-vegetables {
-    padding: 80px 0;
     background: #7a3145;
+    margin: 0 auto;
 }
 
 .title-vegetables {
-    font-weight: 600;
     font-size: 48px;
     line-height: 1.083;
     letter-spacing: -0.01em;
@@ -18,7 +21,6 @@
 }
 
 .text-vegetables {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.428;
     color: #fbfbfb;
@@ -28,13 +30,14 @@
 .section-items {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .name-vegan {
-    font-weight: 600;
     font-size: 28px;
     line-height: 1;
     letter-spacing: -0.01em;
@@ -44,7 +47,6 @@
 }
 
 .text-vegan {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.428;
     color: #141414;
@@ -55,29 +57,27 @@
     list-style: none;
     border-radius: 40px;
     background: #fbfbfb;
-    padding: 32px 24px;
+    padding: 32px 22px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    transition: transform 0.3s ease-out;
 }
 
 .cards-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(-2deg);
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .img-item {
-    height: 240px;
     margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
     .container {
         padding: 100px 32px;
-
     }
 
     .section-vegetables {
-        padding: 100px 0px;
         display: flex;
     }
 
@@ -100,22 +100,26 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
         gap: 24px;
         row-gap: 28px;
+        padding: 0;
+        margin: 0;
     }
 
-    .cards-items {
+    .cards-item {
         width: calc((100% - 24px) / 2);
-        padding: 32px 30px;
     }
 }
 
 @media screen and (min-width: 1280px) {
-    .cards-items {
+    .container {
+        padding: 100px;
+    }
+
+    .cards-item {
         width: calc((100% - 28px) / 3);
         padding: 32px;
+        width: 344px;
     }
 
     .name-vegan {
@@ -123,11 +127,7 @@
     }
 
     .text-vegan {
-        font-size: 16px;
         margin-bottom: 8px;
     }
 
-    .img-item {
-        height: 244px;
-    }
 }
