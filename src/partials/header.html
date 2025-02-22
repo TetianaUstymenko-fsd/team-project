@@ -1,3 +1,59 @@
-<header class="header">
-  <h1>Header</h1>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container head">
+        <div class="header-menu-wrap">
+          <div class="logo-text-button">
+            <div class="logo-wrap">
+              <a class="header-logo-links" href="./index.html"> </a>
+            </div>
+            <button
+              type="button"
+              id="menu-open-btn"
+              aria-label="Menu open button"
+              class="open-menu-btn js-open-menu"
+            >
+              <svg class="header-menu-icon">
+                <use href="../img/icons.svg#icon-logo-1"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="header-navigation">
+            <ul class="header-nav">
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#how-it-works-section"
+                  >How It Works</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#vegetables-section"
+                  >Vegetables</a
+                >
+              </li>
+              <li class="header-nav-item">
+                <a class="header-nav-link" href="#reviews-section">Reviews</a>
+              </li>
+            </ul>
+            <div class="header-shop-wrap">
+              <a href="#your-order-section" class="header-shop-button">
+                Shop now
+                <svg class="shop-basket" height="50" width="50">
+                  <use href="../img/icons.svg#icon-shopping_cart"></use>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
