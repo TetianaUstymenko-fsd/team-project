@@ -1,7 +1,6 @@
 .reviews {
-  min-width: 320px;
-  max-width: 375px;
   padding: 80px 20px;
+  margin: 0 auto;
 }
 
 .title-box {
@@ -10,7 +9,6 @@
 
 .rev-title {
   margin-bottom: 20px;
-  max-height: 156px;
   font-size: 47px;
   line-height: 1.08333;
   color: #141414;
@@ -29,29 +27,21 @@
 .rev-text {
   line-height: 1.42857;
   color: #141414;
+  font-size: 14px;
 }
 
 .rev-item {
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #d4bfc4;
   border-radius: 24px;
 }
 
-.rev-item-second {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 1px solid #d4bfc4;
-  border-radius: 24px;
-}
-
-.rev-item-third {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: 1px solid #d4bfc4;
-  border-radius: 24px;
+.hide {
+  display: none;
 }
 
 .rev-img {
@@ -76,4 +66,45 @@
   line-height: 1.42857;
   text-align: center;
   color: #858585;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 32px;
+  }
+
+  .title-box {
+    margin-bottom: 52px;
+    max-width: 553px;
+  }
+
+  .rev-title {
+    margin-bottom: 24px;
+    font-size: 64px;
+  }
+
+  .rev-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .rev-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .rev-item {
+    width: calc((100% - 24px) / 2);
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+  .hide:not(:last-child) {
+    display: block;
+  }
+
+  .rev-list-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
