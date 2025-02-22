@@ -2,13 +2,10 @@
 
 .hero {
   background-color: #576f35;
-  /* background-image: url(../img/hero/hero-bg-mob-min.jpeg);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
   max-width: 375px;
   display: flex;
-  flex-direction: column; */
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .container-text {
@@ -19,7 +16,7 @@
 .hero-title {
   font-size: 52px;
   text-align: left;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 
 .hero-text {
@@ -30,6 +27,10 @@
 /* HERO-TAB */
 
 @media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+
   .container-text {
     padding: 48px 32px 52px;
   }
