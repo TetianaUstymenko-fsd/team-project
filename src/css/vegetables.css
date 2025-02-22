@@ -1,143 +1,133 @@
-/*--Vegetables--*/
-
 .section-vegetables {
-  padding: 80px 0;
-  background: #7a3145;
+    padding: 80px 0;
+    background: #7a3145;
 }
 
 .title-vegetables {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.083;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
-  margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.083;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 20px;
 }
 
 .vegan {
-  color: #d4bfc4;
+    color: #d4bfc4;
 }
 
 .text-vegetables {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.428;
-  color: #fbfbfb;
-  margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.428;
+    color: #fbfbfb;
+    margin-bottom: 40px;
 }
 
 .section-items {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 .name-vegan {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #7a3145;
-  margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #7a3145;
+    margin-bottom: 12px;
 }
 
 .text-vegan {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.428;
-  color: #141414;
-  margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.428;
+    color: #141414;
+    margin-bottom: 12px;
 }
 
 .cards-item {
-  list-style: none;
-  border-radius: 40px;
-  background: #fbfbfb;
-  padding: 32px 24px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+    list-style: none;
+    border-radius: 40px;
+    background: #fbfbfb;
+    padding: 32px 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .cards-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
 .img-item {
-
-  height: 240px;
-  margin: 0 auto;
+    height: 240px;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
+    .container {
+        padding: 100px 32px;
 
-  .container {
-    padding: 100px 32px;
+    }
 
-  }
+    .section-vegetables {
+        padding: 100px 0px;
+        display: flex;
+    }
 
-  ;
+    .title-vegetables {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        margin-bottom: 24px;
+        max-width: 508px;
+    }
 
-  .section-vegetables {
-    padding: 100px 0px;
-    display: flex;
-  }
+    .text-vegetables {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 52px;
+        max-width: 626px;
+    }
 
-  .title-vegetables {
-    font-size: 64px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
-    max-width: 508px;
-  }
+    .section-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+        gap: 24px;
+        row-gap: 28px;
+    }
 
-  .text-vegetables {
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 52px;
-    max-width: 626px;
-  }
-
-  .section-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    gap: 24px;
-    row-gap: 28px;
-  }
-
-  .cards-items {
-    width: calc((100% - 24px) / 2);
-    padding: 32px 30px;
-  }
+    .cards-items {
+        width: calc((100% - 24px) / 2);
+        padding: 32px 30px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
+    .cards-items {
+        width: calc((100% - 28px) / 3);
+        padding: 32px;
+    }
 
+    .name-vegan {
+        font-size: 32px;
+    }
 
+    .text-vegan {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
 
-  .cards-items {
-    width: calc((100% - 28px) / 3);
-    padding: 32px;
-  }
-
-  .name-vegan {
-    font-size: 32px;
-  }
-
-  .text-vegan {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-
-  .img-item {
-    height: 244px;
-  }
+    .img-item {
+        height: 244px;
+    }
 }
