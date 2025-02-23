@@ -1,10 +1,10 @@
 .reviews {
   padding: 80px 20px;
-  margin: 0 auto;
 }
 
 .title-box {
   margin-bottom: 40px;
+  max-width: 335px;
 }
 
 .rev-title {
@@ -106,5 +106,21 @@
   .rev-list-text {
     font-size: 16px;
     line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .reviews {
+    padding: 100px;
+  }
+
+  .rev-item {
+    width: calc((100% - 24px) / 3);
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .hide {
+    display: block;
   }
 }
