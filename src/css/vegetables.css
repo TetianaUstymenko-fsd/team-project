@@ -1,8 +1,8 @@
-.container {
+.container-vegetables {
     padding: 80px 20px;
 }
 
-.section.vegetables {
+.section-vegetables {
     background: #7a3145;
     margin: 0 auto;
 }
@@ -71,12 +71,8 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .container-vegetables {
         padding: 100px 32px;
-    }
-
-    .section vegetables {
-        display: flex;
     }
 
     .title-vegetables {
@@ -110,7 +106,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .container {
+    .container-vegetables {
         padding: 100px;
     }
 
