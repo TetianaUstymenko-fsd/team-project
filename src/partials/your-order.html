@@ -14,15 +14,17 @@
       </h3>
       <form>
         <div>
-          <input class="form-input" type="text" name="name" autocomplete="off" id="name" placeholder="Full name">
+          <input class="form-input" type="text" name="name" autocomplete="off" required
+            pattern="^[A-Za-zА-Яа-яЄєІіЇїҐґ]+(\s[A-Za-zА-Яа-яЄєІіЇїҐґ]+)*$" placeholder="Full name">
         </div>
         <div>
 
-          <input class="form-input" type="email" name="name" autocomplete="off" id="email" placeholder="Email">
+          <input class="form-input" type="email" name="name" autocomplete="off" required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,})\.([A-z]{2,8})" placeholder="Email">
         </div>
         <div class="form-field">
 
-          <textarea class="comment" name="comment" autocomplete="on" rows="9" placeholder="Comment"></textarea>
+          <textarea class="comment" type="submit" name="comment" autocomplete="on" placeholder="Comment"></textarea>
         </div>
         <button class="form-btn" type="submit">Send</button>
       </form>
