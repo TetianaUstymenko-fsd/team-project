@@ -59,13 +59,10 @@
     padding: 32px 24px;
     cursor: pointer;
     transition: transform 0.3s ease-out;
-    overflow: hidden;
 }
 
 .cards-item:hover {
     transform: scale(1.05) rotate(-2deg);
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    border-radius: 40px;
 }
 
 .img-item {
@@ -104,6 +101,7 @@
 
     .cards-item {
         width: calc((100% - 24px) / 2);
+        padding: 32px 30px;
     }
 }
 
