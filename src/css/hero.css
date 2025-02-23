@@ -24,7 +24,7 @@
 }
 
 .container-image {
-  background-image: url(../img/hero/hero-bg-mob-min.jpeg);
+  background-image: url(/img/hero/hero-bg-mob-min.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,6 +34,12 @@
 @media screen and (min-resolition: 2x) {
   .container-image {
     background-image: url(/img/hero/hero-bg-mob@2x-min.jpeg);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 40px;
   }
 }
 
@@ -54,7 +60,6 @@
   }
 
   .hero-text {
-    font-size: 16px;
     line-height: 1.25;
     max-width: 603px;
   }
@@ -69,7 +74,7 @@
 
   @media screen and (min-resolition: 2x) {
     .container-image {
-      background-image: url(../img/hero/hero-bg-tab@2x-min.jpeg);
+      background-image: url(/img/hero/hero-bg-tab@2x-min.jpeg);
     }
   }
 }
@@ -110,7 +115,7 @@
 
   @media screen and (min-resolition: 2x) {
     .container-image {
-      background-image: url(../img/hero/hero-bg-desk@2x-min.jpeg);
+      background-image: url(/img/hero/hero-bg-desk@2x-min.jpeg);
     }
   }
 }
