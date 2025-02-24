@@ -1,3 +1,7 @@
+img {
+  border-radius: 30px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -11,29 +15,32 @@
 
 .how-it-works {
   background-color: #576f35;
+  display: grid;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .steps-conteiner {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* margin-left: auto;
   margin-right: auto; */
   justify-content: center;
   align-items: center;
+  
 }
 
 .container-img {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 40px 20px;
+  margin: 0;
   background-color: #7A3145;
 }
 
 .steps-images {
-  border-radius: 30px;
   max-width: 335px;
+  max-height: 452px;
 }
 
 .steps-content {
@@ -46,12 +53,12 @@
 }
 
 .steps-title {
-  font-weight: 600;
   font-size: 28px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  max-width: 335px;
   margin-bottom: 20px;
 }
 
@@ -63,12 +70,14 @@
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
+  max-width: 335px;
 
 }
 
 .steps-list {
   list-style: none;
   counter-reset: step-counter;
+  max-width: 335px;
 }
 
 .steps-item {
@@ -82,7 +91,6 @@
   align-items: center;
   position: relative;
   padding-left: 24px;
-  
   margin-bottom: 15px;
   background-color: #fbfbfb;
   counter-increment: step-counter;
@@ -96,8 +104,8 @@
   justify-content: center;
   align-items: center;
   border-radius: 100%;
-  min-width: 52px;
-  min-height: 52px;
+  min-width: 42px;
+  min-height: 42px;
   background: #7a3145;
   margin-right: 24px;
   font-weight: 600;
@@ -105,9 +113,43 @@
   line-height: 1.11;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  border: 5px solid #d4bfc4;
   color: #fbfbfb;
 }
 
 .color-item-text {
   color: #141414;
+}
+
+@media screen and (min-width: 768px) {
+.container-img {
+  padding: 100px 64px;
+}
+.steps-images {
+  max-width: 640px;
+  max-height: 640px;
+}
+.steps-content {
+  padding: 100px 164px;
+}
+.content-text {
+  margin-bottom: 52px;
+}
+.steps-title {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.steps-text {
+  font-size: 16px;
+  line-height: 1.25;
+}
+.steps-item {
+  width: 440px;
+}
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+
 }
