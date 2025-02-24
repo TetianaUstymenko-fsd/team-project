@@ -40,11 +40,6 @@ button {
   transform: translate(-50%);
 }
 
-.heder-svg {
-  width: 32px;
-  height: 32px;
-}
-
 .header-logo-links {
   display: flex;
   align-items: center;
@@ -210,7 +205,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .head {
-    max-width: 704px;
     padding: 32px 0;
   }
 
@@ -221,16 +215,41 @@ button {
   .header-logo-links {
     gap: 8px;
     font-size: 20px;
+    max-width: 216px;
+    padding-left: 100px;
   }
 
   .header-links-icons.kub {
     width: 18px;
     height: 18px;
   }
+}
 
-  .header-menu-icon,
-  .open-menu-btn {
-    width: 40px;
-    height: 40px;
+@media screen and (min-width: 375px) {
+  .head {
+    padding: 16px 0;
+  }
+
+  .logo-text-button {
+    max-width: 168px;
+  }
+
+  .header-logo-links {
+    gap: 8px;
+    font-size: 16px;
+    max-width: 168px;
+    padding-left: 20px;
+  }
+
+  .header-links-icons.kub {
+    width: 16px;
+    height: 16px;
   }
 }
+/*.header-menu-icon,
+  .open-menu-btn {
+    width: 216px;
+    height: 20px;
+  } 
+}
+*/
