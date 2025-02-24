@@ -2,9 +2,10 @@
   padding: 80px 20px;
 }
 
-.section-vegetables {
-  background: #7a3145;
-  margin: 0 auto;
+
+.vegetables {
+    background: #7a3145;
+    margin: 0 auto;
 }
 
 .title-vegetables {
@@ -26,13 +27,13 @@
 }
 
 .section-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .name-vegan {
@@ -52,18 +53,16 @@
 }
 
 .cards-item {
-  list-style: none;
-  border-radius: 40px;
-  background-color: #fbfbfb;
-  padding: 32px 22px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  transition: transform 0.3s ease-out;
+    list-style: none;
+    border-radius: 40px;
+    background: #fbfbfb;
+    padding: 32px 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
 }
 
 .cards-item:hover {
-  transform: scale(1.05) rotate(-2deg);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) rotate(-2deg);
 }
 
 .img-item {
@@ -71,34 +70,54 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-vegetables {
-    padding: 100px 32px;
-  }
+    .container-vegetables {
+        padding: 100px 32px;
+    }
 
-  .title-vegetables {
-    font-size: 64px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
-    max-width: 508px;
-  }
+    .title-vegetables {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        margin-bottom: 24px;
+        max-width: 508px;
+    }
 
-  .text-vegetables {
-    font-size: 16px;
-    line-height: 1.25;
-    margin-bottom: 52px;
-    max-width: 626px;
-  }
+    .text-vegetables {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 52px;
+        max-width: 626px;
+    }
 
-  .section-items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 28px;
-    padding: 0;
-    margin: 0;
-  }
+    .section-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 28px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cards-item {
+        width: calc((100% - 24px) / 2);
+        padding: 32px 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container-vegetables {
+        padding: 100px;
+    }
+
+    .cards-item {
+        padding: 32px;
+        width: 344px;
+    }
+
+    .name-vegan {
+        font-size: 32px;
+    }
 
   .cards-item {
     width: calc((100% - 24px) / 2);
@@ -111,7 +130,6 @@
   }
 
   .cards-item {
-    width: calc((100% - 28px) / 3);
     padding: 32px;
     width: 344px;
   }
