@@ -1,46 +1,23 @@
-:root {
-  --font-family: 'Inter Tight', sans-serif;
-  --second-family: 'Roboto', sans-serif;
-}
-
-:root {
-  --black: #141414;
-  --white: #fbfbfb;
-  --chianti: #7a3145;
-  --blush: #d4bfc4;
-  --green: #576f35;
-  --grey: #858585;
-  --transparent: rgba(20, 20, 20, 0.2);
-  --greenlight: #3cbc81;
-  --smthwrong: #e74a3b;
-}
-
 .footer {
   color: green;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter Tight', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
 }
 
 footer {
-  background-color: #7a3145; /* Колір з макета */
+  background-color: #7a3145;
   color: white;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1080px;
+  max-width: 1280px;
   min-height: 302px;
   padding: 52px 100px;
   margin: 0 auto;
-}
-
-.footer-left,
-.footer-right {
-  flex: 1;
-  min-width: 250px;
 }
 
 .footer-container {
@@ -61,14 +38,14 @@ footer {
 }
 
 .footer-logo svg {
-  width: 100%; /* Робить логотип адаптивним */
-  max-width: 216px; /* Обмеження ширини */
+  width: 100%;
+  max-width: 216px;
   height: auto;
-  margin-bottom: 24px; /* Відступ між логотипом і текстом */
+  margin-bottom: 24px;
 }
 
 .footer-slogan {
-  font-family: var(--font-family);
+  font-family: 'Inter Tight', sans-serif;
   width: 265px;
   font-weight: 500;
   font-size: 16px;
@@ -88,14 +65,13 @@ footer {
 }
 
 .footer-menu {
-  font-family: var(--font-family);
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: var(--white);
-
+  color: #fbfbfb;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -119,11 +95,11 @@ footer {
 
 .footer-contacts {
   width: 216px;
-  margin-left: 121px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
-  color: var(--white);
+  color: #fbfbfb;
 }
 
 .footer-cont-text {
@@ -135,10 +111,65 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
-  color: var(--blush);
+  color: #d4bfc4;
   display: flex;
-  justify-content: space-between; /* Розміщує текст ліворуч і праворуч */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-top: 124px; /* Відступи зверху та з боків */
+  padding-top: 124px;
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  main,
+  footer {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 24px;
+    margin: 32px;
+  }
+
+  .footer-slogan {
+    font-size: 16px;
+    line-height: 2;
+    max-width: 500px;
+  }
+
+  .footer-nav {
+    margin-bottom: 64px;
+  }
+
+  .footer-menu {
+    justify-content: space-between;
+  }
+
+  .footer-menu-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 32px;
+    padding-left: 147px;
+  }
+
+  .footer-bottom {
+    width: 704px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #d4bfc4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
