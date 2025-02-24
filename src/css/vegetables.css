@@ -111,7 +111,6 @@
     }
 
     .cards-item {
-        width: calc((100% - 28px) / 3);
         padding: 32px;
         width: 344px;
     }
