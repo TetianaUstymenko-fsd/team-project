@@ -1,6 +1,7 @@
 .container-vegetables {
-    padding: 80px 20px;
+  padding: 80px 20px;
 }
+
 
 .vegetables {
     background: #7a3145;
@@ -8,21 +9,21 @@
 }
 
 .title-vegetables {
-    font-size: 48px;
-    line-height: 1.083;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 1.083;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .vegan {
-    color: #d4bfc4;
+  color: #d4bfc4;
 }
 
 .text-vegetables {
-    font-size: 14px;
-    line-height: 1.428;
-    margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.428;
+  margin-bottom: 40px;
 }
 
 .section-items {
@@ -33,23 +34,22 @@
     gap: 20px;
     padding: 0;
     margin: 0 auto;
-
 }
 
 .name-vegan {
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #7a3145;
-    margin-bottom: 12px;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7a3145;
+  margin-bottom: 12px;
 }
 
 .text-vegan {
-    font-size: 14px;
-    line-height: 1.428;
-    color: #141414;
-    margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.428;
+  color: #141414;
+  margin-bottom: 12px;
 }
 
 .cards-item {
@@ -66,7 +66,7 @@
 }
 
 .img-item {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,8 +119,26 @@
         font-size: 32px;
     }
 
-    .text-vegan {
-        margin-bottom: 8px;
-    }
+  .cards-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
 
+@media screen and (min-width: 1280px) {
+  .container-vegetables {
+    padding: 100px;
+  }
+
+  .cards-item {
+    padding: 32px;
+    width: 344px;
+  }
+
+  .name-vegan {
+    font-size: 32px;
+  }
+
+  .text-vegan {
+    margin-bottom: 8px;
+  }
 }
