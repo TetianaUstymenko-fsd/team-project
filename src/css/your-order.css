@@ -18,7 +18,6 @@
   color: #d4bfc4;
 }
 .your-order-text {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #fbfbfb;
@@ -90,7 +89,6 @@
   box-sizing: border-box;
   overflow: hidden;
   resize: none;
-  /* padding-right: 0; */
   margin-bottom: 20px;
   outline: none;
 }
@@ -148,7 +146,7 @@ img {
 }
 .your-order-socials-item:not(:last-child)::after {
   content: ' / ';
-  font-weight: 600;
+  font-weight: 600; 
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.01em;
@@ -216,7 +214,7 @@ img {
     margin-bottom: 52px;
   }
   .your-order-socials-text {
-    font-size: 16px;
+    font-size: 16px; 
     line-height: 1.25;
   }
 }
