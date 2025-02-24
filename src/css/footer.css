@@ -22,7 +22,7 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -94,7 +94,7 @@ footer {
 }
 
 .footer-contacts {
-  width: 216px;
+  width: 195px;
 
   font-weight: 700;
   font-size: 16px;
@@ -104,6 +104,12 @@ footer {
 
 .footer-cont-text {
   margin: 24px 0;
+}
+
+.footer-menu-contacts {
+  width: 565px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom {
@@ -129,9 +135,12 @@ footer {
 
   .footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
   }
 
   .footer-logo {
@@ -156,7 +165,6 @@ footer {
   .footer-menu-contacts {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: left;
     margin: 32px;
     padding-left: 147px;
@@ -164,6 +172,7 @@ footer {
 
   .footer-bottom {
     width: 704px;
+    margin: 0 32px;
     font-weight: 500;
     font-size: 16px;
     line-height: 125%;
