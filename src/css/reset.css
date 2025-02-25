@@ -39,8 +39,4 @@ img {
 	box-sizing: border-box;
 }
 
-article > * + * {
-	margin-top: 1em;
-}
-
 
