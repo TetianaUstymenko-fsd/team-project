@@ -16,6 +16,7 @@ img {
 .how-it-works {
   background-color: #576f35;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 0  auto;
 }
@@ -24,6 +25,12 @@ img {
 }
 
 .container-img {
+  width: 100%;
+  max-width: 335px;
+  /* max-width: 335px; */
+    /* display: flex;
+      flex-direction: column;
+      justify-content: center; */
   flex: 1;
   padding: 40px 20px;
   margin: 0 auto;
@@ -36,7 +43,13 @@ img {
 }
 
 .steps-content {
+  width: 100%;
+  max-width: 335px;
+  margin: 0 auto;
   padding: 80px 20px;
+    /* display: flex;
+      flex-direction: column;
+      justify-content: center; */
   justify-content: center;
   text-align: left;
 }
@@ -73,6 +86,10 @@ img {
   max-width: 335px;
 }
 
+.steps-list .steps-item:not(:last-child) {
+margin-bottom: 15px;
+}
+
 .steps-item {
   font-size: 14px;
   line-height: 1.43;
@@ -84,7 +101,7 @@ img {
   align-items: center;
   position: relative;
   padding-left: 24px;
-  margin-bottom: 15px;
+  
   background-color: #fbfbfb;
   counter-increment: step-counter;
 }
@@ -117,6 +134,7 @@ img {
 @media screen and (min-width: 768px) {
 .container-img {
   width: 100%;
+  max-width: 440px;
   padding: 100px 64px;
 }
 .steps-images {
@@ -126,16 +144,21 @@ img {
   max-height: 640px;
 }
 .steps-content {
-  padding: 100px 64px;
+  max-width: 440px;
+  /* justify-content: center; */
+  padding: 100px 0;
 }
 .content-text {
+  max-width: 440px;
   margin-bottom: 52px;
 }
 .steps-title {
+  max-width: 440px;
   font-size: 32px;
   margin-bottom: 24px;
 }
 .steps-text {
+  max-width: 440px;
   font-size: 16px;
   line-height: 1.25;
   
