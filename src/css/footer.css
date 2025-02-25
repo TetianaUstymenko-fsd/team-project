@@ -1,11 +1,19 @@
 .footer {
   background-color: #7a3145;
   color: white;
-  padding: 40px 20px;
 }
 
 .footer-container {
   max-width: 335px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .footer-logo {
@@ -24,25 +32,30 @@
   color: #fbfbfb;
 }
 
-.footer-head {
-  margin-bottom: 40px;
-}
+@media screen and (max-width: 767px) {
+  .footer-head {
+    margin-bottom: 40px;
+  }
 
-.footer-menu-contacts {
-  margin-bottom: 80px;
+  .footer-menu-contacts {
+    margin-bottom: 80px;
+  }
 }
 
 .footer-nav {
+  margin-bottom: 40px;
 }
 
 .footer-menu {
+}
+
+.footer-nav-link {
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  margin-bottom: 40px;
 }
 
 .footer-menu-item:not(:last-child) {
@@ -51,6 +64,9 @@
 
 .footer-contacts {
   width: 195px;
+}
+
+.contacts-list-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42857;
@@ -61,23 +77,27 @@
   margin-bottom: 14px;
 }
 
-.contacts-list-item:last-child {
-  max-width: 179px;
+@media screen and (max-width: 767px) {
+  .contacts-list-item:last-child {
+    max-width: 179px;
+  }
 }
 
 .footer-bottom {
   color: #d4bfc4;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
   bottom: 0;
 }
 
 .pr-pol {
   display: flex;
   flex-direction: row;
-  gap: 8px;
-  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .pr-pol {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
 }
 
 .pr-pol-text {
@@ -85,110 +105,82 @@
   line-height: 1.42857;
 }
 
-/* @media screen and (min-width: 768px) {
-  body,
-  main,
-  footer {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  .footer {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-
+@media screen and (min-width: 768px) {
   .footer-container {
-    flex-wrap: nowrap;
+    max-width: 704px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
   }
 
   .footer-logo {
+    width: 216px;
+    height: 20px;
     margin-bottom: 24px;
-    margin: 32px;
   }
 
   .footer-slogan {
     font-size: 16px;
-    line-height: 2;
-    max-width: 500px;
+    line-height: 1.25;
   }
 
   .footer-nav {
     margin-bottom: 64px;
   }
 
-  .footer-menu {
-    justify-content: space-between;
+  .footer-menu-item:not(:last-child) {
+    margin-bottom: 24px;
   }
 
-  .footer-menu-contacts {
-    width: 227px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-top: 32px;
-    padding-left: 147px;
+  .footer-contacts {
+    width: 215px;
+  }
+
+  .contacts-list-item {
+    font-size: 16px;
+    line-height: 1.25;
   }
 
   .footer-bottom {
-    width: 704px;
-    margin: 0 32px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
     color: #d4bfc4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 32px;
-    padding-top: 100px;
+    bottom: 0;
+  }
+
+  .pr-pol-text {
+    font-size: 16px;
   }
 }
 
-/* @media screen and (mim-width: 375px) {
-  body,
-  main,
-  footer {
-    padding: 0 !important;
-    margin: 0 !important;
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    max-width: 1080px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 
-  .footer {
+  .footer-inf {
     display: flex;
-    align-items: center;
-    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 124px;
   }
 
-  .footer-logo {
-    margin: 0;
-    padding-top: 40px;
-  }
   .footer-menu-contacts {
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 0;
-    margin: 0;
+    flex-direction: row;
+    gap: 121px;
   }
 
-  .footer-container {
-    flex-wrap: wrap;
-    padding: 20px;
-    display: flex;
+  .contacts-list-item:not(:last-child) {
+    margin-bottom: 24px;
   }
-
-  .pr-pol {
-    padding-bottom: 16px;
-  }
-
-  .footer-nav {
-    padding-top: 40px;
-    margin-bottom: 104px;
-  }
-  .footer-bottom {
-    flex-wrap: wrap;
-    margin-left: 20px;
-    padding-top: 80px;
-  }
-} */
+}
