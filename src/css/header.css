@@ -53,9 +53,16 @@
   stroke: #ffffff;
 }
 
-.header-buy-btn {
-  display: none;
-}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	right: -100%;
+	background: #576f35;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+
 
 .header-menu-btn {
   position: absolute;
@@ -74,21 +81,29 @@
   border: none;
 }
 
-.header-menu {
-  display: block;
+.mobile-menu .mobile-menu-list  {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 100%;
+	max-width: 375px;
+	padding: 0 20px;
 
-  width: 32px;
-  height: 32px;
 
   fill: #ffffff;
   stroke: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .header-container {
-    width: 768px;
-    padding: 32px 32px 50px 32px;
-  }
+
+
+
+ .mobile-menu-list .mobile-menu-item .mobile-menu-link {
+	padding: 12px 18px;
+	border: 1px solid #fbfbfb;
+	border-radius: 12px;
+	width: 100%;
+	display: block;
+
 
   .header-logo {
     width: 194px;
