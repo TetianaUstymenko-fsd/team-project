@@ -5,9 +5,12 @@ body {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
+
   color: #fbfbfb;
-  background-color: white;
-}
+  background-color: #fbfbfb;
+
+  margin: 0;
+
 
 h1,
 h2 {
@@ -15,4 +18,11 @@ h2 {
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+}
+button {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  text-transform: none;
 }

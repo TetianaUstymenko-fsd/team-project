@@ -1,3 +1,144 @@
+.container-vegetables {
+  padding: 80px 20px;
+}
+
+
 .vegetables {
-  color: bisque;
+    background: #7a3145;
+    margin: 0 auto;
+}
+
+.title-vegetables {
+  font-size: 48px;
+  line-height: 1.083;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.vegan {
+  color: #d4bfc4;
+}
+
+.text-vegetables {
+  font-size: 14px;
+  line-height: 1.428;
+  margin-bottom: 40px;
+}
+
+.section-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.name-vegan {
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #7a3145;
+  margin-bottom: 12px;
+}
+
+.text-vegan {
+  font-size: 14px;
+  line-height: 1.428;
+  color: #141414;
+  margin-bottom: 12px;
+}
+
+.cards-item {
+    list-style: none;
+    border-radius: 40px;
+    background: #fbfbfb;
+    padding: 32px 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.cards-item:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.img-item {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container-vegetables {
+        padding: 100px 32px;
+    }
+
+    .title-vegetables {
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        margin-bottom: 24px;
+        max-width: 508px;
+    }
+
+    .text-vegetables {
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 52px;
+        max-width: 626px;
+    }
+
+    .section-items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        row-gap: 28px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .cards-item {
+        width: calc((100% - 24px) / 2);
+        padding: 32px 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container-vegetables {
+        padding: 100px;
+    }
+
+    .cards-item {
+        padding: 32px;
+        width: 344px;
+    }
+
+    .name-vegan {
+        font-size: 32px;
+    }
+
+  .cards-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-vegetables {
+    padding: 100px;
+  }
+
+  .cards-item {
+    padding: 32px;
+    width: 344px;
+  }
+
+  .name-vegan {
+    font-size: 32px;
+  }
+
+  .text-vegan {
+    margin-bottom: 8px;
+  }
 }
