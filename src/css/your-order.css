@@ -29,8 +29,8 @@
   padding: 40px 20px;
   max-width: 335px;
   width: 100%;
-  height: 552px;
-  margin: 0 auto;
+  margin: auto;
+  margin-top: 0g; 
   margin-bottom: 20px;
   background-color: #fbfbfb;
 }
@@ -49,6 +49,9 @@
 .your-order-form-text-olivegreen {
   color: #576f35;
 }
+.your-order-form-input{
+  margin-bottom: 16px;
+}
 
 .form-input {
   border: 1px solid #858585;
@@ -56,7 +59,6 @@
   padding: 14px 0 14px 16px;
   width: 100%;
   height: 48px;
-  margin-bottom: 16px;
   outline: none;
 }
 .form-input:hover,
@@ -78,7 +80,9 @@
   line-height: 1.43;
   color: #141414;
 }
-
+.form-field{
+  margin-bottom: 24px;
+}
 .comment {
   border: 1px solid #858585;
   border-radius: 15px;
@@ -88,7 +92,6 @@
   box-sizing: border-box;
   overflow: hidden;
   resize: none;
-  margin-bottom: 20px;
   outline: none;
 }
 .comment:hover,
@@ -121,7 +124,6 @@
   border-radius: 30px;
   padding: 40px 20px;
   max-width: 335px;
-  height: 456px;
   background-color: #7a3145;
   margin: 0 auto;
 }
@@ -182,7 +184,6 @@
   .your-order-form {
     padding: 72px 100px;
     max-width: 640px;
-    height: 632px;
   }
   .your-order-form-text {
     font-size: 32px;
@@ -207,9 +208,8 @@
   .your-order-socials {
     padding: 52px;
     max-width: 640px;
-    height: 528px;
   }
-  img {
+  .your-order-img {
     margin-bottom: 52px;
   }
   .your-order-socials-text {
@@ -237,11 +237,13 @@
   .your-order-form {
     padding: 52px 48px;
     max-width: 524px;
-    height: 592px;
+    margin-bottom: 0;
+  }
+  .your-order-img{
+    margin-bottom: 80px;
   }
   .your-order-socials {
     padding: 52px 48px;
     max-width: 524px;
-    height: 592px;
   }
 }
