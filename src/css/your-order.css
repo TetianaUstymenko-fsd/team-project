@@ -31,7 +31,6 @@
   width: 100%;
   height: 552px;
   margin: 0 auto;
-  margin-bottom: 20px;
   background-color: #fbfbfb;
 }
 
@@ -49,7 +48,7 @@
 .your-order-form-text-olivegreen {
   color: #576f35;
 }
-.your-order-form{
+.your-order-form-input:not(:last-child){
   margin-bottom: 16px;
 }
 .form-input {
@@ -123,7 +122,6 @@
   border-radius: 30px;
   padding: 40px 20px;
   max-width: 335px;
-  height: 456px;
   background-color: #7a3145;
   margin: 0 auto;
 }
@@ -184,7 +182,6 @@
   .your-order-form {
     padding: 72px 100px;
     max-width: 640px;
-    height: 632px;
   }
   .your-order-form-text {
     font-size: 32px;
@@ -209,9 +206,8 @@
   .your-order-socials {
     padding: 52px;
     max-width: 640px;
-    height: 528px;
   }
-  img {
+  .your-order-img {
     margin-bottom: 52px;
   }
   .your-order-socials-text {
@@ -239,11 +235,9 @@
   .your-order-form {
     padding: 52px 48px;
     max-width: 524px;
-    height: 592px;
   }
   .your-order-socials {
     padding: 52px 48px;
     max-width: 524px;
-    height: 592px;
   }
 }
