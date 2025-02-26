@@ -1,5 +1,7 @@
 Team
 
+Team lead - Анастасія Оболонська velentiy@gmail.com
+
 Header - Анна planktonchik88@gmail.com
 
 Hero - Юлія chernyshevaulia2905@gmail.com
