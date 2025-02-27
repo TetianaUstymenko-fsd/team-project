@@ -142,10 +142,13 @@
   margin: 0 auto;
 }
 .your-order-img {
-  border-radius: 15px;
   margin-bottom: 20px;
+}
+.picture-img{
+  border-radius: 15px;
   background-color: rgba(20, 20, 20, 0.2);
 }
+
 .your-order-socials-text {
   font-weight: 700;
   font-size: 14px;
