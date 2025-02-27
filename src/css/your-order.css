@@ -31,7 +31,7 @@
   max-width: 335px;
   width: 100%;
   margin: auto;
-  margin-top: 0g; 
+  margin-top: 0;
   margin-bottom: 20px;
   background-color: #fbfbfb;
 }
@@ -50,7 +50,7 @@
 .your-order-form-text-olivegreen {
   color: #576f35;
 }
-.your-order-form-input{
+.your-order-form-input {
   margin-bottom: 16px;
 }
 
@@ -81,7 +81,7 @@
   line-height: 1.43;
   color: #141414;
 }
-.form-field{
+.form-field {
   margin-bottom: 24px;
 }
 .comment {
@@ -121,7 +121,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-btn:hover,
-.form-btn:focus{
+.form-btn:focus {
   color: #fbfbfb;
 
   border: 1px solid rgba(251, 251, 251, 0.2);
@@ -144,7 +144,7 @@
 .your-order-img {
   margin-bottom: 20px;
 }
-.picture-img{
+.picture-img {
   border-radius: 15px;
   background-color: rgba(20, 20, 20, 0.2);
 }
@@ -183,8 +183,8 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .your-order-socials-link:hover,
-.your-order-socials-link:focus{
-  color:  #d4bfc4;
+.your-order-socials-link:focus {
+  color: #d4bfc4;
 }
 /*////// Адаптивність ////*/
 
@@ -260,7 +260,7 @@
     max-width: 524px;
     margin-bottom: 0;
   }
-  .your-order-img{
+  .your-order-img {
     margin-bottom: 80px;
   }
   .your-order-socials {
