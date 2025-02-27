@@ -11,8 +11,9 @@
 }
 
 .container-text {
-  padding: 100px 20px 40px;
+  padding-top: 100px;
   text-align: start;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -49,11 +50,13 @@
 
 @media screen and (min-width: 768px) {
   .container-hero {
+    padding: 0;
     max-width: 768px;
   }
 
   .container-text {
-    padding: 120px 32px 52px;
+    padding-top: 120px;
+    margin-bottom: 52px;
   }
 
   .hero-title {
@@ -69,7 +72,6 @@
 
   .container-image {
     background-image: url(/img/hero/hero-bg-tab-min.jpeg);
-    background-size: contain;
     height: 536px;
   }
 

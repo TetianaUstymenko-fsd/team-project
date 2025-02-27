@@ -8,6 +8,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.footer-hover:hover,
+.footer-hover:focus {
+  color: #d4bfc4;
+}
 
 @media screen and (max-width: 767px) {
   .footer-container {
@@ -21,9 +25,6 @@
   height: 16px;
   margin-bottom: 14px;
   fill: #fbfbfb;
-}
-
-.footer-svg {
 }
 
 .footer-slogan {
@@ -45,9 +46,6 @@
 
 .footer-nav {
   margin-bottom: 40px;
-}
-
-.footer-menu {
 }
 
 .footer-nav-link {
@@ -82,6 +80,10 @@
   .contacts-list-item:last-child {
     max-width: 179px;
   }
+  .pr-pol {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
 }
 
 .footer-bottom {
@@ -92,13 +94,6 @@
 .pr-pol {
   display: flex;
   flex-direction: row;
-}
-
-@media screen and (max-width: 767px) {
-  .pr-pol {
-    gap: 8px;
-    margin-bottom: 16px;
-  }
 }
 
 .pr-pol-text {

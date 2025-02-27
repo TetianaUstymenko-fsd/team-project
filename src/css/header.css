@@ -280,7 +280,7 @@
   color: #fbfbfb;
   width: 157px;
   height: 52px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
   -webkit-tap-highlight-color: transparent;
