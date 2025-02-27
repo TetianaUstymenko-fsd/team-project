@@ -3,7 +3,8 @@
   width: 100%;
 }
 .your-order-container {
-  padding: 80px 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,7 +31,7 @@
   max-width: 335px;
   width: 100%;
   margin: auto;
-  margin-top: 0g; 
+  margin-top: 0;
   margin-bottom: 20px;
   background-color: #fbfbfb;
 }
@@ -49,7 +50,7 @@
 .your-order-form-text-olivegreen {
   color: #576f35;
 }
-.your-order-form-input{
+.your-order-form-input {
   margin-bottom: 16px;
 }
 
@@ -80,7 +81,7 @@
   line-height: 1.43;
   color: #141414;
 }
-.form-field{
+.form-field {
   margin-bottom: 24px;
 }
 .comment {
@@ -117,6 +118,19 @@
   width: 100%;
   height: 52px;
   background-color: #7a3145;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-btn:hover,
+.form-btn:focus {
+  color: #fbfbfb;
+
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  background: #622133;
+}
+.form-btn:active {
+  color: #7a3145;
+  background: #fbfbfb;
+  border-color: #d4bfc4;
 }
 /* /////////соцмережі////// */
 
@@ -128,10 +142,13 @@
   margin: 0 auto;
 }
 .your-order-img {
-  border-radius: 15px;
   margin-bottom: 20px;
+}
+.picture-img {
+  border-radius: 15px;
   background-color: rgba(20, 20, 20, 0.2);
 }
+
 .your-order-socials-text {
   font-weight: 700;
   font-size: 14px;
@@ -163,8 +180,12 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.your-order-socials-link:hover,
+.your-order-socials-link:focus {
+  color: #d4bfc4;
+}
 /*////// Адаптивність ////*/
 
 @media only screen and (min-width: 768px) {
@@ -239,7 +260,7 @@
     max-width: 524px;
     margin-bottom: 0;
   }
-  .your-order-img{
+  .your-order-img {
     margin-bottom: 80px;
   }
   .your-order-socials {
